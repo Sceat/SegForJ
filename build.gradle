@@ -12,7 +12,12 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
+	mavenCentral()
+	maven {url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+    maven {url "https://oss.sonatype.org/content/groups/public/" }
 }
 
 dependencies {
+	compile 'org.spigotmc:spigot-api:1.10.2-R0.1-SNAPSHOT'
+	compile 'org.sonatype:bungeecord-api:1.10-SNAPSHOT'
 }
