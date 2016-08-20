@@ -13,7 +13,7 @@ Compatible with Spigot and Bungeecord :frog:
 
 #### Method 1 (for kohi pvp pro gamers or gay martians)
 
-* Download the [jarFile](/build/libs/SegForJ-0.0.1.jar)
+* Download the [jarFile](https://github.com/Sceat/SegForJ/raw/master/SegForJ-0.0.1.jar)
 
 #### Method 2 (for lituanian pgm hipsters)
 
