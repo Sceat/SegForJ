@@ -24,9 +24,9 @@ dependencies {
 
 jar {
     exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.MF'
-
+    destinationDir = file("$rootDir/")
     manifest {
         attributes 'Main-Class': 'sceat.SegForJ',
-                   'Class-Path': configurations.runtime.files.collect { "lib/$it.name" }.join(' ')
+                   'Class-Path': configurations.runtime.files.collect { "$it.name" }.join(' ')
     }
 }
