@@ -19,5 +19,14 @@ repositories {
 
 dependencies {
 	compile 'org.spigotmc:spigot-api:1.10.2-R0.1-SNAPSHOT'
-	compile 'org.sonatype:bungeecord-api:1.10-SNAPSHOT'
+	compile 'net.md-5:bungeecord-api:1.10-SNAPSHOT'
+}
+
+jar {
+    exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.MF'
+
+    manifest {
+        attributes 'Main-Class': 'sceat.SegForJ',
+                   'Class-Path': configurations.runtime.files.collect { "lib/$it.name" }.join(' ')
+    }
 }
